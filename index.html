@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+<section>
+  <h1 id="title">Title</h1>
+  <p id="description">Text</p>
+  <form action="" id="survey-form">
+    <!-- Name, Email, Rate forms -->
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" placeholder="Enter name here" required>
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" placeholder="Enter email here" required>
+    <label for="number" id="number-label">Rating (0-10):</label>
+    <input type="number" id="number" min="0" max="10" placeholder="0-10">
+    <!-- Drop down menu -->
+    <label for="dropdown">Text here:</label>
+    <select name="dropdown" id="dropdown">
+      <option value="" name="placeholder" disabled selected>Select an option</option>
+      <option value="op1">option 1</option>
+      <option value="op2">option 2 </option>
+      <option value="op3">option 3</option>
+    </select>
+    <!-- Radio button options -->
+    <p>Would you recommend to a friend?</p>
+    <label for="yes">Likely</label>
+    <input  type="radio" name="recommend" id="yes" value="yes" checked>
+    <label for="maybe">Possibly</label> 
+    <input type="radio" name="recommend" id="maybe" value="maybe">
+    <label for="no">Not Likely</label> 
+    <input type="radio" name="recommend" id="no" value="no">
+    <!-- Checkbox options -->
+    <p>Areas we can improve on (Select all that apply):</p>
+    <label for="op1">Option 1</label> 
+    <input type="checkbox" value="op1" id="op1">
+    <label for="op2">Option 2</label>
+    <input type="checkbox" value="op2" id="op2">
+    <label for="op3">Option 3</label>
+    <input type="checkbox" value="op3" id="op3">
+    <!-- Textarea -->
+    <label for="comments">Please leave any addition comments:</label>
+    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+    <!-- Submit button -->
+    <button id="submit" type="submit">submit</button>
+  </form>
+</section>  
+  
+</body>
+</html>
