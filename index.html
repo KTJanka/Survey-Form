@@ -10,26 +10,26 @@
 <body>
 <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 <section>
-  <h1 id="title">Title</h1>
-  <p id="description">Text</p>
+  <h1 id="title">Customer Satisfaction Survey</h1>
+  <p id="description">Thank you for choosing our restaurant! As customer satisfaction is our number one priority, we are always looking for ways to improve. Please take a moment of your time to fill out this survey form so we may continue to offer you great service! </p>
   <form action="" id="survey-form">
     <!-- Name, Email, Rate forms -->
-    <label for="name" id="name-label">Name:</label>
+    <label class ="main-label" for="name" id="name-label">Full Name:</label>
     <input type="text" id="name" placeholder="Enter name here" required>
-    <label for="email" id="email-label">Email:</label>
+    <label class ="main-label" for="email" id="email-label">Your Email:</label>
     <input type="email" id="email" placeholder="Enter email here" required>
-    <label for="number" id="number-label">Rating (0-10):</label>
+    <label class ="main-label" for="number" id="number-label">Rate Your Experience (0-10):</label>
     <input type="number" id="number" min="0" max="10" placeholder="0-10">
     <!-- Drop down menu -->
-    <label for="dropdown">Text here:</label>
+    <label class ="main-label" for="dropdown">Which Location Did You Visit?</label>
     <select name="dropdown" id="dropdown">
-      <option value="" name="placeholder" disabled selected>Select an option</option>
-      <option value="op1">option 1</option>
-      <option value="op2">option 2 </option>
-      <option value="op3">option 3</option>
+      <option value="" name="placeholder" disabled selected>Select a City</option>
+      <option value="op1">San Francisco</option>
+      <option value="op2">Los Angeles </option>
+      <option value="op3">San Diego</option>
     </select>
     <!-- Radio button options -->
-    <p>Would you recommend to a friend?</p>
+    <p class ="main-label">Would you recommend us to a friend?</p>
     <label for="yes">Likely</label>
     <input  type="radio" name="recommend" id="yes" value="yes" checked>
     <label for="maybe">Possibly</label> 
@@ -37,20 +37,20 @@
     <label for="no">Not Likely</label> 
     <input type="radio" name="recommend" id="no" value="no">
     <!-- Checkbox options -->
-    <p>Areas we can improve on (Select all that apply):</p>
-    <label for="op1">Option 1</label> 
+    <p class ="main-label">Areas we can improve on (Select all that apply):</p>
+    <label for="op1">Quality of Food</label> 
     <input type="checkbox" value="op1" id="op1">
-    <label for="op2">Option 2</label>
+    <label for="op2">Pricing</label>
     <input type="checkbox" value="op2" id="op2">
-    <label for="op3">Option 3</label>
+    <label for="op3">Customer Service</label>
     <input type="checkbox" value="op3" id="op3">
     <!-- Textarea -->
-    <label for="comments">Please leave any addition comments:</label>
+    <p class ="main-label">Please leave any addition comments:</p>
     <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
     <!-- Submit button -->
-    <button id="submit" type="submit">submit</button>
+    <button id="submit" type="submit">Submit</button>
   </form>
 </section>  
-  
+<footer> Kyle Janka &copy; 2019</footer>  
 </body>
 </html>

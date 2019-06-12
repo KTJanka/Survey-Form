@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+section {
+  border: 3px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  width: 60%;
+  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(251,251,251,1) 13%, rgba(246,246,246,1) 33%, rgba(237,237,237,1) 100%);
+  -webkit-box-shadow: 15px 6px 12px 2px rgba(87,87,87,1);
+  -moz-box-shadow: 15px 6px 12px 2px rgba(87,87,87,1);
+  box-shadow: 15px 6px 12px 2px rgba(87,87,87,1);
+}
+
+#title {
+  text-align: center;
+  font-size: 2em;
+  margin: 2%;
+}
+
+#description {
+  margin: 3%;
+  
+}
+
+label {
+  display: block;
+  margin-left: 25%;
+  margin-top: 1%;
+  font-style: italic;
+}
+
+input {
+  margin-left: 25%;
+}
+
+select {
+  margin-left: 25%;
+}
+
+textarea {
+  resize: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+button {
+  display: block;
+  width: 30%;
+  max-width: 200px;
+  margin:2% auto;
+  font-weight: 600;
+  height: 25px;
+}
+.main-label {
+  font-weight: 600;
+  margin-left: 25%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-style: normal;
+  font-size: 1.10em;
+}
+
+footer {
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  color: #fff;
+  background: #000;
+}
+
+@media screen and (max-width: 425px) {
+  section {
+    width: 80%;
+  }
+
+  .main-label {
+    margin-left: 10%;
+  }
+
+  input {
+    margin-left: 10%;
+  }
+
+  label {
+    margin-left: 10%;
+  }
+
+  button {
+    margin: 7% auto;
+  }
+}
